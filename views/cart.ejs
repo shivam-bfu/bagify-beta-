@@ -1,0 +1,81 @@
+<%- include('navbar.ejs') %>
+<link rel="stylesheet" href="/styles/cart.css" />
+<div class="cart-header">
+<h2>Shopping Cart</h2>
+</div>
+<div class="cart-container">
+  <div class="cart-wrapper">
+
+    <div class="cart-product-item">
+
+
+      <div class="cart-product-image">
+        <img src="" alt="product" />
+        </div>
+
+
+        <div class="cart-product-detail">
+
+
+          <p style="font-size: large; margin-bottom: 5px; text-decoration: underline;">name</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, mollitia porro. Id in hic ad officia, odit sapiente reprehenderit? Minus debitis nulla voluptatum deleniti enim dolorum incidunt voluptate dignissimos laboriosam.</p>
+        </div>
+
+
+        <div class="cart-product-price-detail">
+
+
+          <p style="font-size: large; margin-bottom: 5px; text-decoration: underline;">Each</p>
+          <p>$122</p>
+        </div>
+
+        <div class="cart-product-amount-detail">
+          <p style="font-size: large; margin-bottom: 5px; margin-top: -1px; text-decoration: underline;" >Quantity</p>
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+          <p style="  font-size: larger;">-</p>
+          <input style="  font-size: larger;" type="number" value="1" />
+          <p style="  font-size: larger;"> +</p>
+        </div>
+        </div>
+        <p class="cart-delete">X</p>
+
+      </div>
+    </div>
+ 
+
+    <div class="cart-total">
+      
+      <div class="cart-total-promo">
+      <p style="text-align: center;">ENTER PROMO CODE</p>
+    <input type="text" placeholder="Promo Code"/>
+    <button > Apply </button>
+  </div>
+
+  <div class="cart-total-detail">
+    <div style="display: flex; justify-content: space-between; padding: 5px;">
+     
+    <p>shipping cost</p>
+    <p>Free</p>
+  </div>
+  <div style="display: flex; justify-content: space-between; padding: 5px;">
+    
+    <p>Discount</p>
+    <p>$10</p>
+  </div>
+
+    <div style="display: flex; justify-content: space-between; padding: 5px;">
+
+    <p>Estimated Total</p>
+    <p>$122</p>
+  </div>
+
+  </div>
+
+  <div class="cart-total-checkout">
+    <button>Checkout</button>
+    </div>
+
+  </div>
+</div>
+
+<%- include('footer.ejs') %>

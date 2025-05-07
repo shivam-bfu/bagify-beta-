@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    font-family: cursive;
+}
+
+.admin-panel-container{
+
+    padding: 10px;
+    background-color: whitesmoke;
+
+}
+.admin-panel-title{
+    margin-top: 20px;
+
+}
+
+.admin-panel-button{
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.admin-panel-button button{
+    padding: 20px;
+    width: 30%;
+    border-radius: 5px;
+    background-color: rgb(92, 39, 142);
+    font-size: larger;
+    color: whitesmoke;
+}

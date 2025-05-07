@@ -1,0 +1,18 @@
+<%- include('adminPanel.ejs') %>
+
+<link rel="stylesheet" href="/styles/createProduct.css"> 
+<div class="createProduct-Container">
+
+<div class="createProduct-wrapper">
+    
+<form action="/product/create" method="post" enctype="multipart/form-data">
+ <input type="file" placeholder="Upload Picture" name="image">
+ <input type="text" placeholder="Product Title" name="title">
+ <input type="text" placeholder="Description" name="description">
+ <input type="number" placeholder="Price" name="price">
+ <input type="number" placeholder="Discount" name="discount">
+    <button type="submit">Create Product</button>
+</form>
+
+</div>
+</div>

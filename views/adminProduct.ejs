@@ -1,0 +1,39 @@
+<%- include('adminPanel') %>
+<link rel="stylesheet" href="/styles/shop.css">
+<div class="shop-container">
+<div class="shop-wrapper">
+
+
+
+
+
+    <div class="shop-products">
+        <% for( let index = 0; index < products.length; index++ ) { %>
+        
+            <div class="shop-each-product">
+                
+                <div class="shop-product-image">
+                    <img src="data:image/jpeg;base64,<%= products[index].image.toString('base64') %>" />
+                </div>
+                <div class="shop-product-detail">
+                    <p style="font-size: large;"><%= products[index].name %></p>
+                    <p>$<%= products[index].price %></p>
+                    <p> $300  %10 off</p>
+                    <div style="display: flex; justify-content: space-between; margin-top: 10px;">
+                    <a style="color: blue;">Edit</a>
+                    <a style="color: red;">Delete</a>
+                </div>
+                </div>
+                
+            </div>
+            <% } %>
+    </div>
+
+
+</div>
+
+
+
+</div>
+
+

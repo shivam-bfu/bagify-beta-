@@ -1,0 +1,29 @@
+<%- include('navbar.ejs') %>
+<link rel="stylesheet" href="/styles/productDetail.css" />
+
+<div class="product-detail-container">
+
+    <div class="product-detail-wrapper">
+        <div class="product-detail-image">
+            <img src="data:image/jpeg;base64,<%= product.image.toString('base64') %>" alt="product image"/>
+        </div>
+
+        <div class="product-detail-detail">
+            <p><%= product.name %></p>
+            <p><%= product.description %></p>
+            <p>$<%= product.price %></p>
+            <p style="text-decoration: line-through; color: red; display: inline;">$<%= product.price+product.discount  %></p>
+            <p style="display: inline;">  $<%=product.discount %>off</p>
+            <div class="product-detail-button">
+               <a href="/product/<%=product._id %>"> <button>Add to Cart</button> </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="product-detail-rec-product">
+
+</div>
+
+<%- include('footer.ejs') %>
+

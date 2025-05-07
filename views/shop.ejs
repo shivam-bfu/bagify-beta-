@@ -1,0 +1,42 @@
+<%- include('navbar') %>
+<link rel="stylesheet" href="/styles/shop.css">
+<div class="shop-container">
+<div class="shop-wrapper">
+
+
+    <div class="shop-category">
+        category
+    </div>
+
+
+
+    <div class="shop-products">
+        <% for( let index = 0; index < products.length; index++ ) { %>
+            <a href="/product/detail/<%= products[index]._id %>" style="text-decoration: none; color: black;">
+            <div class="shop-each-product">
+                
+                <div class="shop-product-image">
+                    <img src="data:image/jpeg;base64,<%= products[index].image.toString('base64') %>" />
+                    
+                </div>
+                <div class="shop-product-detail">
+                    <p style="font-size: large;"><%= products[index].name %></p>
+                    <p>$<%= products[index].price %></p>
+                    <p style="text-decoration: line-through; color: red; display: inline;">$<%= products[index].price+products[index].discount  %></p>
+                    <p style="display: inline;">  $<%=products[index].discount %>off</p>
+                </div>
+                
+            </div>
+        </a>
+            <% } %>
+    </div>
+
+
+</div>
+
+
+
+</div>
+
+
+<%- include('footer') %>

@@ -1,0 +1,113 @@
+.signup-container {
+  height: 540px;
+  padding: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-wrapper {
+  border: 0.2px solid rgb(0, 0, 0, 0.2);
+  height: 90%;
+  width: 60%;
+  display: flex;
+  padding: 10px;
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-between;
+  background-color: #f4f4f4;
+}
+
+.create-account {
+  flex: 1.4;
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.create-account h2 {
+  margin: 5px;
+}
+.create-account h3 {
+  margin: 5px;
+}
+.create-account form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70%;
+}
+
+.create-account form input {
+  margin-top: 20px;
+  width: 90%;
+  height: 40px;
+  border: 0;
+  border-bottom: 0.5px solid;
+  outline: none;
+  background-color: #f4f4f4;
+}
+
+.create-account form button {
+  margin-top: 15px;
+  margin-left: 0px;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  min-width: 80%;
+  color: whitesmoke;
+
+  background-color: #868686;
+}
+
+.or-section {
+  flex: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.or-section p {
+  border-radius: 60px;
+  padding: 18px;
+
+  text-align: center;
+  background-color: lightgray;
+}
+.log-in {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+  align-items: center;
+}
+
+.log-in form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  border-left: 1px solid;
+  height: 50%;
+}
+.log-in form input {
+  margin-top: 20px;
+  width: 80%;
+  height: 40px;
+  border: 0;
+  border-bottom: 0.5px solid;
+  outline: none;
+  background-color: #f4f4f4;
+}
+.log-in form button {
+  margin-top: 15px;
+  margin-left: 0px;
+  padding: 5px;
+  border-radius: 10px;
+  min-width: 40%;
+  border: none;
+  color: whitesmoke;
+  background-color: #868686;
+}
